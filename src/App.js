@@ -119,22 +119,29 @@ const App = () => {
 
   return (
     <>
-      <div className="header">
-        <p className="logo">
+      <div>
+        {/* className="header" */}
+        <p>
+          {/* className="logo" */}
           <strong> ቤቶች </strong>BORD
         </p>
 
-        <div className="header-right">
-          <div className="login-link">
+        <div>
+          {/* className="header-right" */}
+          <div>
+            {/* className="login-link" */}
             {user ? (
               <div>
-                <button className="user-profile-btn" onClick={openUsermenu}>
+                <button onClick={openUsermenu}>
+                  {/* className="user-profile-btn" */}
                   <h1> {Array.from(user.email)[0]} </h1>
-                  <img src={onlineStatus} className="online-status" />
+                  <img src={onlineStatus} />
+                  {/* className="online-status" */}
                 </button>
               </div>
             ) : (
-              <button onClick={openMenu} className="login-menu-btn">
+              <button onClick={openMenu} >
+                {/* className="login-menu-btn" */}
                 LogIn
               </button>
             )}
@@ -143,18 +150,23 @@ const App = () => {
           </div>
         </div>
 
-        <Modal className="newuser-form" isOpen={userdata}>
+        <Modal isOpen={userdata}>
+          {/* className="newuser-form" */}
           <>
-            <h2 className="new-user-form">Plese enter your info below </h2>
+            <h2 >Plese enter your info below </h2>
+            {/*className="new-user-form"  */}
 
             <form
               onSubmit={(e) => {
                 handleSignup(e);
               }}
             >
-              <div className="newuser-form-container">
-                <div className="name-container">
-                  <div className="first-name">
+              <div >
+                {/* className="newuser-form-container" */}
+                <div >
+                  {/* className="name-container" */}
+                  <div >
+                    {/* className="first-name" */}
                     First Name
                     <input
                       onChange={(e) => {
@@ -164,7 +176,8 @@ const App = () => {
                       required
                     />
                   </div>
-                  <div className="last-name">
+                  <div >
+                    {/* className="last-name" */}
                     Last Name
                     <input
                       onChange={(e) => {
@@ -175,8 +188,10 @@ const App = () => {
                     />
                   </div>
                 </div>
-                <div className="phone-container">
-                  <div className="phone-box">
+                <div >
+                  {/* className="phone-container" */}
+                  <div >
+                    {/* className="phone-box" */}
                     Phone
                     <input
                       onChange={(e) => setPhone(e.target.value)}
@@ -185,12 +200,14 @@ const App = () => {
                     />
                   </div>
                 </div>
-                <button className="sign-btn color-btn" type="submit">
+                <button  type="submit">
+                  {/* className="sign-btn color-btn" */}
                   Save your info
                 </button>
               </div>
 
-              <p className="newuser-form-border">
+              <p >
+                {/* className="newuser-form-border" */}
                 <b>Note:</b> We use your contact detail when visitors are
                 interested in your posted property and want to contact you.
               </p>
@@ -198,161 +215,202 @@ const App = () => {
           </>
         </Modal>
 
-        <Modal className="modal" isOpen={menuisOpen} onRequestClose={closeMenu}>
-          <button className="close-menu-btn" onClick={closeMenu}>
+        <Modal  isOpen={menuisOpen} onRequestClose={closeMenu}>
+          {/* className="modal" */}
+          <button  onClick={closeMenu}>
+            {/* className="close-menu-btn" */}
             X
           </button>
 
           <div className="">
             <Login onClick={closeMenu} />
-            <NavLink className="signup-link" to="/signup" onClick={closeMenu}>
+            <NavLink  to="/signup" onClick={closeMenu}>
+              {/* className="signup-link" */}
               Create an account
             </NavLink>
           </div>
         </Modal>
         <Modal
-          className="modal"
+          // className="modal"
           isOpen={userMenuisopen}
           onRequestClose={closeUsermenu}
         >
-          <div className="user-menu-container">
-            <div className="user-menu-container-close">
+          <div >
+            {/* className="user-menu-container" */}
+            <div >
+              {/* className="user-menu-container-close" */}
               <img src={close} onClick={() => setUsermenuopen(false)} />
             </div>
 
             {user ? (
               <>
-                <div className="user-menu">
-                  <div className="user-info">
-                    <div className="user-avatar">
-                      <button className="user-profile-btn">
+                <div >
+                  {/* className="user-menu" */}
+                  <div >
+                    {/* className="user-info" */}
+                    <div >
+                      {/* className="user-avatar" */}
+                      <button >
+                        {/* className="user-profile-btn" */}
                         <h1> {Array.from(user.email)[0]} </h1>
                       </button>
                     </div>
 
-                    <div className="user-email-id">
+                    <div >
+                      {/* className="user-email-id" */}
                       <p> {user.email} </p>
-                      <p className="user-id">
+                      <p >
+                        {/* className="user-id" */}
                         <span>{t("your id.1")}:</span> {user.uid}{" "}
                       </p>
                     </div>
                   </div>
 
-                  <div className="line"></div>
+                  <div ></div>
+                  {/* className="line" */}
 
-                  <div className="user-actions">
-                    <div className="profile">
+                  <div >
+                    {/* className="user-actions" */}
+                    <div >
+                      {/* className="profile" */}
                       <label>{t("profile.1")}</label>
 
-                      <div className="link-group">
-                        <div className="link-group-left">
+                      <div >
+                        {/* className="link-group" */}
+                        <div >
+                          {/* className="link-group-left" */}
                           <img alt="" src={UserAccount} />
                         </div>
-                        <div className="link-group-right">
+                        <div >
+                          {/* className="link-group-right" */}
                           <button
                             onClick={() => {
                               navigate("/account-info");
                               closeUsermenu();
                             }}
                           >
-                            <h3 className="user-action-links">
+                            <h3 >
+                              {/* className="user-action-links" */}
                               {t("Account.1")}
                               <img alt="" src={forwardarrow} />
                             </h3>
                           </button>
-                          <p className="description">
+                          <p >
+                            {/* className="description" */}
                             {t("edit your account.1")}
                           </p>
                         </div>
                       </div>
 
-                      <div className="link-group">
-                        <div className="link-group-left">
+                      <div >
+                        {/* className="link-group" */}
+                        <div >
+                          {/* className="link-group-left" */}
                           <img alt="" src={Package} />
                         </div>
-                        <div className="link-group-right">
+                        <div >
+                          {/* className="link-group-right" */}
                           <button
                             onClick={() => {
                               console.log("hello");
                             }}
                           >
-                            <h3 className="user-action-links">
+                            <h3 >
+                              {/* className="user-action-links" */}
                               {t("package.1")}
                               <img alt="" src={forwardarrow} />
                             </h3>
                           </button>
-                          <p className="description">
+                          <p >
+                            {/* className="description" */}
                             {t("create a new package.1")}
                           </p>
                         </div>
                       </div>
-                      <div className="line"></div>
+                      <div ></div>
+                      {/* className="line" */}
                     </div>
 
-                    <div className="settings">
+                    <div >
+                      {/* className="settings" */}
                       <label>{t("settings.1")}</label>
-                      <div className="link-group highlight">
-                        <div className="link-group-left">
+                      <div >
+                        {/* className="link-group highlight" */}
+                        <div >
+                          {/* className="link-group-left" */}
                           <img alt="" src={Upload} />
                         </div>
-                        <div className="link-group-right">
+                        <div >
+                          {/* className="link-group-right" */}
                           <button
                             onClick={() => {
                               navigate("/add-place");
                               closeUsermenu();
                             }}
                           >
-                            <h3 className="user-action-links">
+                            <h3 >
+                              {/* className="user-action-links" */}
                               {t("post your place.1")}
                               <img alt="" src={forwardarrow} />
                             </h3>
                           </button>
-                          <p className="description">
+                          <p >
+                            {/* className="description" */}
                             {t("post your place for sell or rent.1")}
                           </p>
                         </div>
                       </div>
 
-                      <div className="link-group">
-                        <div className="link-group-left">
+                      <div >
+                        {/* className="link-group" */}
+                        <div >
+                          {/* className="link-group-left" */}
                           <img alt="" src={managePlace} />
                         </div>
 
-                        <div className="link-group-right">
+                        <div >
+                          {/* className="link-group-right" */}
                           <button
                             onClick={() => {
                               navigate("/manage-my-places");
                               closeUsermenu();
                             }}
                           >
-                            <h3 className="user-action-links">
+                            <h3 >
+                              {/* className="user-action-links" */}
                               {t("manage places you posted.1")}
                               <img alt="" src={forwardarrow} />
                             </h3>
                           </button>
-                          <p className="description">
+                          <p >
+                            {/* className="description" */}
                             {t("edit remove or boost your place.1")}
                           </p>
                         </div>
                       </div>
 
-                      <div className="link-group">
-                        <div className="link-group-left">
+                      <div >
+                        {/* className="link-group" */}
+                        <div >
+                          {/* className="link-group-left" */}
                           <img alt="" src={Language} />
                         </div>
-                        <div className="link-group-right">
+                        <div >
+                          {/* className="link-group-right" */}
                           <button
                             onClick={() => {
                               navigate("/lang");
                               closeUsermenu();
                             }}
                           >
-                            <h3 className="user-action-links">
+                            <h3 >
+                              {/* className="user-action-links" */}
                               {t("language.1")}
                               <img alt="" src={forwardarrow} />
                             </h3>
                           </button>
-                          <p className="description">
+                          <p >
+                            {/* className="description" */}
                             {t("choose the Language of your preference.1")}
                           </p>
                         </div>
@@ -362,8 +420,9 @@ const App = () => {
                           logout();
                           navigate("/");
                         }}
-                        className="logout-btn"
+                        
                       >
+                        {/* className="logout-btn" */}
                         {t("logout.1")}
                       </span>
                     </div>
