@@ -1,5 +1,13 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  View,
+  Button,
+  Image,
+  Modal,
+  TextInput
+} from "react-native";
 
 import React, { useContext, useState, useEffect } from "react";
 import { Routes, Route, useNavigate, NavLink } from "react-router-dom";
@@ -7,7 +15,7 @@ import { Routes, Route, useNavigate, NavLink } from "react-router-dom";
 import { AuthContext } from "./context/AuthContext";
 import { auth } from "./firebase";
 import { signOut } from "firebase/auth";
-import Modal from "react-modal";
+// import Modal from "react-modal";
 import MapView from "./components/mapView";
 import ListView from "./components/listView";
 import Login from "./pages/login/Login";
@@ -119,245 +127,245 @@ export default function App() {
   }
   return (
     <>
-      <div className="header">
-        <p className="logo">
-          <strong> ቤቶች </strong>BORD
-        </p>
-
-        <div className="header-right">
-          <div className="login-link">
+    {/* className="header" */}
+      <View style={styles.header}>
+        {/* <Text className="logo">
+          <Text> ቤቶች </strong>BORD
+        </Text> */}
+<Text>Betoch</Text>
+        <Text className="header-right">
+          <Text className="login-link">
             {user ? (
-              <div>
-                <button className="user-profile-btn" onClick={openUsermenu}>
-                  <h1> {Array.from(user.email)[0]} </h1>
-                  <img src={onlineStatus} className="online-status" />
-                </button>
-              </div>
+              <Text>
+                <Button onClick={openUsermenu}>
+                {/* className="user-profile-btn" */}
+                  <Text> {Array.from(user.email)[0]} </Text>
+                  <Image source={onlineStatus} />
+                  {/* className="online-status" */}
+                </Button>
+              </Text>
             ) : (
-              <button onClick={openMenu} className="login-menu-btn">
+              <Button onClick={openMenu} className="login-menu-btn">
                 LogIn
-              </button>
+              </Button>
             )}
 
             {/* <NewFlat /> */}
-          </div>
-        </div>
+          </Text>
+        </Text>
 
         <Modal className="newuser-form" isOpen={userdata}>
           <>
-            <h2 className="new-user-form">Plese enter your info below </h2>
+            <Text className="new-user-form">Plese enter your info below </Text>
 
-            <form
+            <View
               onSubmit={(e) => {
                 handleSignup(e);
               }}
             >
-              <div className="newuser-form-container">
-                <div className="name-container">
-                  <div className="first-name">
+              <View className="newuser-form-container">
+                <View className="name-container">
+                  <View className="first-name">
                     First Name
-                    <input
+                    <TextInput
                       onChange={(e) => {
                         setFirstname(e.target.value);
                       }}
-                      type="text"
                       required
                     />
-                  </div>
-                  <div className="last-name">
+                  </View>
+                  <View className="last-name">
                     Last Name
-                    <input
+                    <TextInput
                       onChange={(e) => {
                         setLastname(e.target.value);
                       }}
-                      type="text"
                       required
                     />
-                  </div>
-                </div>
-                <div className="phone-container">
-                  <div className="phone-box">
+                  </View>
+                </View>
+                <View className="phone-container">
+                  <View className="phone-box">
                     Phone
-                    <input
+                    <TextInput
                       onChange={(e) => setPhone(e.target.value)}
-                      type="text"
                       required
                     />
-                  </div>
-                </div>
-                <button className="sign-btn color-btn" type="submit">
+                  </View>
+                </View>
+                <Button className="sign-btn color-btn" type="submit">
                   Save your info
-                </button>
-              </div>
+                </Button>
+              </View>
 
-              <p className="newuser-form-border">
-                <b>Note:</b> We use your contact detail when visitors are
+              <Text>className="newuser-form-border">
+                <Text>Note:</Text> We use your contact detail when visitors are
                 interested in your posted property and want to contact you.
-              </p>
-            </form>
+              </Text>
+            </View>
           </>
         </Modal>
 
         <Modal className="modal" isOpen={menuisOpen} onRequestClose={closeMenu}>
-          <button className="close-menu-btn" onClick={closeMenu}>
+          <Button className="close-menu-btn" onClick={closeMenu}>
             X
-          </button>
+          </Button>
 
-          <div className="">
+          <View className="">
             <Login onClick={closeMenu} />
             <NavLink className="signup-link" to="/signup" onClick={closeMenu}>
               Create an account
             </NavLink>
-          </div>
+          </View>
         </Modal>
         <Modal
           className="modal"
           isOpen={userMenuisopen}
           onRequestClose={closeUsermenu}
         >
-          <div className="user-menu-container">
-            <div className="user-menu-container-close">
-              <img src={close} onClick={() => setUsermenuopen(false)} />
-            </div>
+          <View className="user-menu-container">
+            <View className="user-menu-container-close">
+              <Image source={close} onClick={() => setUsermenuopen(false)} />
+            </View>
 
             {user ? (
               <>
-                <div className="user-menu">
-                  <div className="user-info">
-                    <div className="user-avatar">
-                      <button className="user-profile-btn">
-                        <h1> {Array.from(user.email)[0]} </h1>
-                      </button>
-                    </div>
+                <View className="user-menu">
+                  <View className="user-info">
+                    <View className="user-avatar">
+                      <Button className="user-profile-btn">
+                        <Text> {Array.from(user.email)[0]} </Text>
+                      </Button>
+                    </View>
 
-                    <div className="user-email-id">
-                      <p> {user.email} </p>
-                      <p className="user-id">
-                        <span>{t("your id.1")}:</span> {user.uid}{" "}
-                      </p>
-                    </div>
-                  </div>
+                    <View className="user-email-id">
+                      <Text> {user.email} </Text>
+                      <Text>className="user-id">
+                        <Text>{t("your id.1")}:</Text> {user.uid}{" "}
+                      </Text>
+                    </View>
+                  </View>
 
-                  <div className="line"></div>
+                  <View className="line"></View>
 
-                  <div className="user-actions">
-                    <div className="profile">
-                      <label>{t("profile.1")}</label>
+                  <View className="user-actions">
+                    <View className="profile">
+                      <Text>{t("profile.1")}</Text>
 
-                      <div className="link-group">
-                        <div className="link-group-left">
-                          <img alt="" src={UserAccount} />
-                        </div>
-                        <div className="link-group-right">
-                          <button
+                      <View className="link-group">
+                        <View className="link-group-left">
+                          <Image alt="" source={UserAccount} />
+                        </View>
+                        <View className="link-group-right">
+                          <Button
                             onClick={() => {
                               navigate("/account-info");
                               closeUsermenu();
                             }}
                           >
-                            <h3 className="user-action-links">
+                            <Text> className="user-action-links">
                               {t("Account.1")}
-                              <img alt="" src={forwardarrow} />
-                            </h3>
-                          </button>
-                          <p className="description">
+                              <Image alt="" source={forwardarrow} />
+                            </Text>
+                          </Button>
+                          <Text>className="description">
                             {t("edit your account.1")}
-                          </p>
-                        </div>
-                      </div>
+                          </Text>
+                        </View>
+                      </View>
 
-                      <div className="link-group">
-                        <div className="link-group-left">
-                          <img alt="" src={Package} />
-                        </div>
-                        <div className="link-group-right">
-                          <button
+                      <View className="link-group">
+                        <View className="link-group-left">
+                          <Image alt="" source={Package} />
+                        </View>
+                        <View className="link-group-right">
+                          <Button
                             onClick={() => {
                               console.log("hello");
                             }}
                           >
-                            <h3 className="user-action-links">
+                            <Text> className="user-action-links">
                               {t("package.1")}
-                              <img alt="" src={forwardarrow} />
-                            </h3>
-                          </button>
-                          <p className="description">
+                              <Image alt="" source={forwardarrow} />
+                            </Text>
+                          </Button>
+                          <Text>className="description">
                             {t("create a new package.1")}
-                          </p>
-                        </div>
-                      </div>
-                      <div className="line"></div>
-                    </div>
+                          </Text>
+                        </View>
+                      </View>
+                      <View className="line"></View>
+                    </View>
 
-                    <div className="settings">
-                      <label>{t("settings.1")}</label>
-                      <div className="link-group highlight">
-                        <div className="link-group-left">
-                          <img alt="" src={Upload} />
-                        </div>
-                        <div className="link-group-right">
-                          <button
+                    <View className="settings">
+                      <Text>{t("settings.1")}</Text>
+                      <View className="link-group highlight">
+                        <View className="link-group-left">
+                          <Image alt="" source={Upload} />
+                        </View>
+                        <View className="link-group-right">
+                          <Button
                             onClick={() => {
                               navigate("/add-place");
                               closeUsermenu();
                             }}
                           >
-                            <h3 className="user-action-links">
+                            <Text> className="user-action-links">
                               {t("post your place.1")}
-                              <img alt="" src={forwardarrow} />
-                            </h3>
-                          </button>
-                          <p className="description">
+                              <Image alt="" source={forwardarrow} />
+                            </Text>
+                          </Button>
+                          <Text>className="description">
                             {t("post your place for sell or rent.1")}
-                          </p>
-                        </div>
-                      </div>
+                          </Text>
+                        </View>
+                      </View>
 
-                      <div className="link-group">
-                        <div className="link-group-left">
-                          <img alt="" src={managePlace} />
-                        </div>
+                      <View className="link-group">
+                        <View className="link-group-left">
+                          <Image alt="" source={managePlace} />
+                        </View>
 
-                        <div className="link-group-right">
-                          <button
+                        <View className="link-group-right">
+                          <Button
                             onClick={() => {
                               navigate("/manage-my-places");
                               closeUsermenu();
                             }}
                           >
-                            <h3 className="user-action-links">
+                            <Text> className="user-action-links">
                               {t("manage places you posted.1")}
-                              <img alt="" src={forwardarrow} />
-                            </h3>
-                          </button>
-                          <p className="description">
+                              <Image alt="" source={forwardarrow} />
+                            </Text>
+                          </Button>
+                          <Text>className="description">
                             {t("edit remove or boost your place.1")}
-                          </p>
-                        </div>
-                      </div>
+                          </Text>
+                        </View>
+                      </View>
 
-                      <div className="link-group">
-                        <div className="link-group-left">
-                          <img alt="" src={Language} />
-                        </div>
-                        <div className="link-group-right">
-                          <button
+                      <View className="link-group">
+                        <View className="link-group-left">
+                          <Image alt="" source={Language} />
+                        </View>
+                        <View className="link-group-right">
+                          <Button
                             onClick={() => {
                               navigate("/lang");
                               closeUsermenu();
                             }}
                           >
-                            <h3 className="user-action-links">
+                            <Text> className="user-action-links">
                               {t("language.1")}
-                              <img alt="" src={forwardarrow} />
-                            </h3>
-                          </button>
-                          <p className="description">
+                              <Image alt="" source={forwardarrow} />
+                            </Text>
+                          </Button>
+                          <Text>className="description">
                             {t("choose the Language of your preference.1")}
-                          </p>
-                        </div>
-                      </div>
-                      <span
+                          </Text>
+                        </View>
+                      </View>
+                      <Text
                         onClick={() => {
                           logout();
                           navigate("/");
@@ -365,17 +373,17 @@ export default function App() {
                         className="logout-btn"
                       >
                         {t("logout.1")}
-                      </span>
-                    </div>
-                  </div>
-                </div>
+                      </Text>
+                    </View>
+                  </View>
+                </View>
               </>
             ) : (
               <></>
             )}
-          </div>
+          </View>
         </Modal>
-      </div>
+      </View>
       {/* <Routes>
         <Route path="/" element={<MapView />} />
         <Route path="/listView" element={<ListView />} />
@@ -390,3 +398,9 @@ export default function App() {
     </>
   );
 }
+
+const styles = StyleSheet.create({
+  header:{
+    color: "red"
+  }
+})
