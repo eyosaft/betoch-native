@@ -1,0 +1,150 @@
+.search-by-price {
+  /* border-top: 2px dashed #18958c; */
+  /* margin-top: 30px; */
+}
+
+/* .price-bar-container {
+  display: flex;
+  width: 90%;
+  padding-top: 7px;
+  height: 13px;
+  margin: 25px auto;
+  border-top: #9ddbd4ae 1px solid;
+} */
+
+input[name="price-range"] {
+  accent-color: #6d9d97;
+}
+
+.price-range-toggle {
+  width: fit-content;
+  margin: 10px auto;
+  padding-top: 5px;
+  border: none;
+  background: none;
+  font-size: 15px;
+}
+
+.price-range-toggle img {
+  width: 15px;
+  padding-right: 4px;
+}
+
+.price-container {
+  margin-top: 10px;
+  height: 0px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card-search input {
+  padding: 5px;
+  padding-left: 10px;
+  width: 79%;
+  border: none;
+  border-bottom: solid 2px #9ddbd4ae;
+  font-size: 25px;
+}
+
+.card-search {
+  margin: 10px auto;
+  padding: 10px;
+  color: #787878;
+  border-radius: 20px;
+  width: 90%;
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: #dadada 0px 0px 10px 1px;
+}
+
+.card-search-title {
+  font-size: 18px;
+}
+
+.search-icon {
+  width: 15px;
+  height: 15px;
+  padding: 10px;
+}
+
+.card-input-box {
+  display: flex;
+}
+
+.flat-card {
+  width: 96%;
+  margin: 14px auto;
+  border-radius: 10px;
+  /* box-shadow: #bbbbbb 0px 0px 10px 2px; */
+  padding-bottom: 10px;
+}
+
+.card-post-date {
+  font-size: 13px;
+  padding: 4px;
+}
+
+.card-details {
+  display: flex;
+}
+
+.card-name {
+  padding: 5px;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.card-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card-price {
+  margin-left: auto;
+  width: 35%;
+  min-width: 27%;
+  max-width: 35%;
+  display: flex;
+  padding-top: 15px;
+  border-radius: 10px;
+  color: #3c3c3c;
+}
+
+.card-price p {
+  font-size: 4vw;
+}
+
+.card-price-tag-dot {
+  width: 15px;
+  height: 20px;
+}
+
+.card-address {
+  display: flex;
+}
+
+.card-location-dot {
+  width: 12px;
+  height: 12px;
+  padding: 4px;
+  padding-top: 2.5px;
+}
+
+.card-decription {
+  display: flex;
+}
+
+.card-description-dot {
+  width: 10px;
+  height: 10px;
+  padding: 5px;
+}
+
+.map-icon {
+  width: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+

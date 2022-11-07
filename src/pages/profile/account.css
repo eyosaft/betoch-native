@@ -1,0 +1,246 @@
+.edit-user-info {
+width: 90%;
+margin: 20px auto;
+}
+
+.edit-user-info-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-user-info-header h2 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.exit-edit-user-btn {
+    width: fit-content;
+    border: none;
+    background: none;
+}
+
+.exit-edit-user-btn img {
+    width: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    margin-bottom: 30px;
+}
+
+.edit-user-info-title {
+ font-size: 20px;
+ font-weight: 600;   
+}
+
+.user-name {
+    margin-top: 30px;
+}
+
+.user-name-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-name {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.name {
+    display: flex;
+}
+
+.current-name {
+    display: flex;
+}
+
+.current-name p {
+    padding-right: 3px;
+}
+
+.name button {
+    width: fit-content;
+    margin-left: auto;
+    border: none;
+    background: none;
+    color: #000;
+    text-decoration: underline;
+}
+
+.name p {
+    font-weight: 700;
+}
+
+.name h3 {
+    font-weight: 700;
+}
+
+.name-box {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-evenly;
+    
+}
+
+.name-box input {
+    width: 90%;
+    font-size: 24px;
+    padding: 5px;
+    border: none;
+    border-bottom: #000 1.5px solid;
+    
+}
+
+.first-name, .last-name {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.save-name {
+width: 98%;
+margin: auto;
+}
+
+.save-name .save-btn {
+    margin-top: 10px;
+    width: 30%;
+    padding: 4px;
+    font-size: 23px;
+    background: none;
+    color: #000;
+    border: #18958c 2px solid;
+    border-radius: 8px;
+}
+
+
+
+.edit-user-email {
+    margin-top: 30px;
+    
+    
+}
+
+.email {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-email-form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.email p {
+    text-align: left;
+    font-weight: 700;
+}
+
+.email h3 {
+    font-weight: 700;
+}
+
+.email button {
+    border: none;
+    background: none;
+    text-decoration: underline;
+}
+
+.edit-email-box {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-evenly;
+    
+}
+
+.edit-email-box input {
+    width: 100%;
+    font-size: 24px;
+    padding: 5px;
+    border: none;
+    border-bottom: #000 1.5px solid;
+    
+}
+
+
+.edit-email {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+/* phone */
+
+
+.edit-user-phone {
+    margin-top: 30px;
+    
+    
+}
+
+.phone {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-phone-form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.phone p {
+    text-align: left;
+    font-weight: 700;
+}
+
+.phone h3 {
+    font-weight: 700;
+}
+
+.phone button {
+    border: none;
+    background: none;
+    text-decoration: underline;
+}
+
+.edit-phone-box {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-evenly;
+    
+}
+
+.edit-phone-box input {
+    width: 100%;
+    font-size: 24px;
+    padding: 5px;
+    border: none;
+    border-bottom: #000 1.5px solid;
+    
+}
+
+
+.edit-phone {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+input::placeholder {
+    font-weight: 500;
+    opacity: .6;
+    color: #8d8d8d;
+}

@@ -1,0 +1,43 @@
+.login-form {
+    width: 100%;
+    height: 24vh;
+    z-index: 1009;
+}
+
+.login-form form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.email-container, .password-container, .login-btn-container {
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+}
+
+.input-box {
+    font-size: 20px;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #000000;
+}
+
+.login-btn-container button {
+    font-size: 18px;
+    padding: 7px;
+    border: none;
+    background-color: #0e9ba5;
+    color: #ffffff;
+}
+
+
+.signup-link {
+    float: right;
+    width: fit-content;
+    padding: 4px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #3ea4c0;
+}

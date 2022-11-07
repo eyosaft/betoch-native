@@ -1,0 +1,25 @@
+
+.list-loader-skeleton {
+    width: 96%;
+    margin: 0 auto;
+    color: #ebebeb;
+    margin-bottom: 30px;
+}
+
+.loader-skeleton-items {
+    margin-top: 10px;
+}
+
+.details-loader-skeleton {
+    width: 94%;
+    margin: 100px auto;
+}
+
+.map-loader {
+    width: 100px;
+}
+
+.map-loader-container {
+    width: 30%;
+    margin: 200px auto;
+}

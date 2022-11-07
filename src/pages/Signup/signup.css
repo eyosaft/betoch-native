@@ -1,0 +1,116 @@
+.signup-container {
+  width: 95%;
+  margin: 10% auto;
+}
+
+.signup-msg-box {
+  color: #fca6a6;
+  padding: 1px;
+  margin-left: 2px;
+}
+
+.close-route img {
+  width: 20px;
+  float: right;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.signup-title {
+  text-align: center;
+  font-size: 24px;
+}
+
+.signup-form {
+  margin-top: 30px;
+}
+
+.signup-form form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.email-container,
+.password-container,
+.signup-btn-container {
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+}
+
+.email-box {
+  font-size: 20px;
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid #000000;
+}
+
+.password-box {
+  font-size: 20px;
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid #000000;
+}
+
+.name-container {
+  display: flex;
+  width: 100%;
+  margin: auto;
+}
+
+.first-name,
+.last-name {
+  width: 47.5%;
+  padding: 4px;
+}
+
+.first-name input,
+.last-name input {
+  font-size: 20px;
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid #000000;
+}
+
+.phone-container {
+}
+
+.phone-box {
+  width: 98%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.phone-box input {
+  font-size: 20px;
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid #000000;
+}
+
+.signup-btn-container {
+    margin-top: 20px;
+}
+
+.signup-btn-container button {
+  font-size: 18px;
+  padding: 7px;
+  border: none;
+  background-color: #0e9ba5;
+  color: #ffffff;
+}
+
+.already-hv-acc {
+  margin-left: auto;
+  margin-top: 25px;
+  width: fit-content;
+  background: none;
+  border: none;
+  padding: 4px;
+  font-size: 15px;
+  text-decoration: none;
+  color: #3ea4c0;
+}

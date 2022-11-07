@@ -1,6 +1,3 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
-
 import React, { useContext, useState, useEffect } from "react";
 import { Routes, Route, useNavigate, NavLink } from "react-router-dom";
 
@@ -36,7 +33,9 @@ import close from "./Assets/close.png";
 import forwardarrow from "./Assets/forward_arrow_icon.png";
 import onlineStatus from "./Assets/online status.gif";
 
-export default function App() {
+// Make sure to bind modal to your appElement (https://reactcommunity.org/react-modal/accessibility/)
+
+const App = () => {
   const [menuisOpen, setIsOpen] = useState(false);
   const [userMenuisopen, setUsermenuopen] = useState(false);
   const { currentUser } = useContext(AuthContext);
@@ -117,6 +116,7 @@ export default function App() {
   function ChooseLanguage(lang) {
     i18n.changeLanguage(lang);
   }
+
   return (
     <>
       <div className="header">
@@ -376,7 +376,7 @@ export default function App() {
           </div>
         </Modal>
       </div>
-      {/* <Routes>
+      <Routes>
         <Route path="/" element={<MapView />} />
         <Route path="/listView" element={<ListView />} />
         <Route path="/signup" element={<Signup onClick={openMenu} />} />
@@ -386,7 +386,9 @@ export default function App() {
         <Route path="edit-place/:id" element={<EditPlace />} />
         <Route path="/manage-my-places" element={<ManageMyPlaces />} />
         <Route path="/lang" element={<LanguageMenu />} />
-      </Routes> */}
+      </Routes>
     </>
   );
-}
+};
+
+export default App;

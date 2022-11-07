@@ -1,0 +1,80 @@
+.edit-place-container {
+  width: 90%;
+  margin: 20px auto;
+}
+
+.edit-place-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.exit-edit-place-btn {
+  width: fit-content;
+  border: none;
+  background: none;
+}
+
+.exit-edit-place-btn img {
+  width: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  margin-bottom: 30px;
+}
+
+.add-edit-header h2 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.edit-place {
+  margin-top: 20px;
+}
+
+.edit-place input {
+  border-radius: 4px;
+}
+
+.current-place-name {
+  display: flex;
+  font-weight: 800;
+}
+
+.current-place-name button {
+  margin-left: auto;
+  border: none;
+  background: none;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.current-name-box {
+  padding: 20px 0;
+  display: flex;
+}
+
+.edit-place-card {
+  padding: 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 17px -5px,
+    rgba(0, 0, 0, 0.3) 0px 2px 8px -4px;
+  border-radius: 10px;
+  height: fit-content;
+}
+
+.save-update-btn {
+  margin: 10px 0;
+  font-size: 16px;
+  padding: 5px 15px;
+  border: none;
+  /* border: #000 1px solid; */
+  background: none;
+  border-radius: 8px;
+}
+
+.edit-place-description-items {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  /* border: #000 1px solid;
+  border-radius: 8px; */
+}

@@ -1,0 +1,50 @@
+.language-menu-container {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.language-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.select-language {
+    display: flex;
+    /* width: 100%; */
+    padding: 13px;
+    background: none;
+    border: #000 1px solid;
+    border-radius: 10px;
+    margin-top: 20px;
+    font: 200;
+    font-size: 16px;
+}
+
+
+.flags {
+    display: flex;
+    width: 56px;
+    margin-left: auto;
+}
+
+.flag-us {
+    width: 25px;
+    padding: 1px;
+}
+
+.flag-uk {
+    width: 25px;
+    padding: 1px;
+}
+
+.flag-et {
+    width: 27px;
+    padding: 1px;
+}
+
+.select-language input[type=radio] {
+    accent-color: #339f95;
+    border: 0px;
+    width: 7%;
+    height: 2em;
+}

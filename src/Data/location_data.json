@@ -1,0 +1,93 @@
+{
+  "flats": [
+    {
+      "flat_id": "001",
+      "flat_price": "5,000,000",
+      "flat_name": "Flat neer kirkos subcity",
+      "flat_address": "kirkos, Addis Ababa",
+      "flat_description": "It has WI-FI",
+      "lat": "9.013401",
+      "lot": "38.753422",
+      "images": [
+        "https://www.propertyfinder.ae/property/69d137649001f40c42b64e2737bdeb3e/416/272/MODE/99624c/8926846-29f76o.webp?ctr=ae"
+      ],
+      "date_posted": "1 Sep, 2022"
+    },
+    {
+      "flat_id": "002",
+      "flat_price": "10,000",
+      "flat_name": "Flat around lafto medanialem",
+      "flat_address": "Lafto, Addis Ababa",
+      "flat_description": "It has WI-FI and power",
+      "lat": "8.960884",
+      "lot": "38.712500",
+      "images": [
+        "https://images.bayut.com/thumbnails/245803845-400x300.jpeg",
+        "https://asapeg.com/public/images/properties/3bd4499ae5a37b060b5e46311a329874ace7e6da_103b70f3ace047774114a7778f8dac8f9f57fe7e.jpg"
+      ],
+      "date_posted": "4 Sep, 2022"
+    },
+    {
+      "flat_id": "003",
+      "flat_price": "17,800",
+      "flat_name": "A Flat neer by bureau of justice",
+      "flat_address": "Shola, Addis Ababa",
+      "flat_description": "It has WI-FI and power",
+      "lat": "9.022202",
+      "lot": "38.797014",
+      "images": [
+        "https://is1-2.housingcdn.com/01c16c28/417f86b761f699479ef1a294f1094cd5/v0/fs/1_bhk_apartment-for-rent-chhatarpur-New+Delhi-bedroom.jpg",
+        "https://is1-2.housingcdn.com/01c16c28/0b7e5e296e6e360fbaffa31b21c10304/v0/large/1_bhk_apartment-for-rent-chhatarpur-New+Delhi-bedroom.jpg"
+      ],
+      "date_posted": "18 Oct, 2022"
+    }
+  ]
+}
+
+
+
+
+
+{
+  "results": [
+    {
+      "providedLocation": {
+        "latLng": {
+          "lat": 9.010151509853998,
+          "lng": 38.74488943268594
+        }
+      },
+      "locations": [
+        {
+          "street": "Ras Lulseged Street",
+          "adminArea6": "",
+          "adminArea6Type": "Neighborhood",
+          "adminArea5": "Addis Ababa",
+          "adminArea5Type": "City",
+          "adminArea4": "",
+          "adminArea4Type": "County",
+          "adminArea3": "Addis Ababa",
+          "adminArea3Type": "State",
+          "adminArea1": "ET",
+          "adminArea1Type": "Country",
+          "postalCode": "1164",
+          "geocodeQualityCode": "B1AAA",
+          "geocodeQuality": "STREET",
+          "dragPoint": false,
+          "sideOfStreet": "N",
+          "linkId": "0",
+          "unknownInput": "",
+          "type": "s",
+          "latLng": {
+            "lat": 9.010142,
+            "lng": 38.74473
+          },
+          "displayLatLng": {
+            "lat": 9.010142,
+            "lng": 38.74473
+          }
+        }
+      ]
+    }
+  ]
+}

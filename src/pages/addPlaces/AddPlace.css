@@ -1,0 +1,142 @@
+.add-place-container {
+    width: 90%;
+    height: 140vh;
+    margin: 20px auto;
+}
+
+.add-place-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.exit-add-place-btn {
+    width: fit-content;
+    border: none;
+    background: none;
+}
+
+.exit-add-place-btn img {
+    width: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    margin-bottom: 30px;
+}
+
+.add-place-header h2 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.add-place {
+    margin-top: 20px;
+}
+
+.add-place input {
+    border-radius: 4px;
+    
+}
+
+.add-place-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-place-name-box {
+    width: 97%;
+    margin: 0 auto;
+    font-size: 23px;
+    padding: 3px;
+}
+
+
+.add-place-price {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.add-place-price-box {
+    width: 97%;
+    margin: 0 auto;
+    font-size: 23px;
+    padding: 3px;
+}
+
+.add-place-description {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.add-place-description-box {
+    width: 97%;
+    height: 60px;
+    margin: 0 auto;
+    font-size: 23px;
+    padding: 3px;
+}
+
+.add-place-map {
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+
+.add-place-imgUrl {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30px;
+    border: #000 1px solid;
+    border-radius: 8px;
+}
+
+.add-place-imgurl-box {
+    padding: 20px;
+    margin: 0 auto;
+    
+}
+
+.add-marker-icon {
+    width: 30px;
+    filter: drop-shadow(0 0 0.70rem #767676);
+}
+
+.color-btn {
+    background-color: #000;
+}
+
+.add-place-description-items {
+    display: flex;
+    padding: 10px;
+    justify-content: space-evenly;
+    /* border: #000 1px solid;
+    border-radius: 8px; */
+}
+
+.add-place-size {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+.add-place-size input {
+    width: 50px;
+    font-size: 20px;
+    padding: 3px;
+    margin-left: 1px;
+}
+
+.add-bedrooms {
+    display: flex;
+    font-size: 16px;
+    flex-direction: column;
+}
+
+.add-bedrooms input {
+    width: 60px;
+    font-size: 20px;
+    padding: 3px;
+    margin-left: 2px;
+}

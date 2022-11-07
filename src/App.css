@@ -1,0 +1,404 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.routes {
+  margin-top: 9vh;
+}
+
+.App {
+  text-align: center;
+}
+
+.spinner-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffffca;
+  z-index: 1001;
+}
+
+.loading-logo {
+  width: 30%;
+  position: absolute;
+  top: 40%;
+  left: 38%;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  height: 6vh;
+  display: flex;
+  background-color: #ffffffe4;
+  color: #373737;
+  z-index: 1000;
+  padding: 5px;
+  justify-content: center;
+}
+
+.logo {
+  font-size: 17px;
+  font-weight: 800;
+  padding: 13px;
+  color: #292929;
+}
+
+.logo strong {
+  font-size: 15px;
+  font-weight: 900;
+  color: #4ca1a7;
+}
+
+.header-right {
+  display: flex;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.Login-link {
+  padding: 0;
+}
+
+.login-menu-btn {
+  display: flex;
+  padding: 2px;
+  margin-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  /* border: solid 1px #0b7e80; */
+  border-radius: 2px;
+  color: #0b7e80;
+  background: #ffffff;
+}
+
+.login-link img {
+  position: absolute;
+  bottom: 3px;
+  right: 25px;
+  width: 14px;
+  z-index: 3003;
+  /* border: solid 2px #25919d; */
+  border-radius: 100px;
+  /* border: #fff 1px solid; */
+  border: #fff 2px solid;
+}
+
+.user-profile-btn {
+  border: none;
+  background: #286a6e;
+  /* border: #2f2f2f 2px solid; */
+  border-radius: 100%;
+  width: 45px;
+  height: 45px;
+}
+
+.user-profile-btn h1 {
+  text-align: center;
+  font-size: 23px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+}
+
+.description {
+  font-size: 12px;
+  padding-left: 4px;
+  color: #7e7e7e;
+}
+
+.user-actions {
+  display: flex;
+  flex-direction: column;
+}
+
+.link-group {
+  box-shadow: #eaeaea 0px 0px 7px 0px;
+  padding: 5px;
+  border-radius: 8px;
+  margin-top: 10px;
+  display: flex;
+}
+
+.link-group button {
+  width: 100%;
+  display: flex;
+  background: none;
+  border: none;
+}
+
+.user-action-links {
+  text-align: left;
+  width: 100%;
+  color: #303030;
+  font-weight: 700;
+  margin-left: 5px;
+  border-radius: 8px;
+  display: flex;
+}
+
+.user-action-links img {
+  width: 7px;
+  margin-left: auto;
+  padding-top: 9px;
+}
+
+.logout-btn {
+  width: fit-content;
+  background-color: #ffffff;
+  box-shadow: #d9d9d9 1px 0px 6px 0px;
+  padding: 5px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  color: #e05961;
+}
+
+.user-menu-container-close {
+  width: fit-content;
+  margin-left: auto;
+}
+
+.user-menu-container-close img {
+  width: 15px;
+}
+
+.user-info {
+  display: flex;
+  margin-top: 5px;
+  background-color: #c2c2c238;
+  padding: 10px;
+  border-radius: 14px;
+  /* border-top-left-radius: 10px;
+  border-top-right-radius: 10px; */
+  
+}
+
+.user-avatar {
+  width: fit-content;
+  margin-left: 10px;
+}
+
+.user-avatar h1 {
+  text-align: center;
+  font-size: 22px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+.user-email-id {
+  padding-top: 5px;
+  padding-left: 5px;
+  font-size: 15px;
+}
+
+.user-email-id span {
+  font-weight: 500;
+  color: #676767;
+}
+
+.user-id {
+  font-weight: 100;
+  font-size: 10px;
+}
+
+
+
+.line {
+  width: 100%;
+  height: 0px;
+  border-bottom: #438485 1px dashed;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1003;
+  width: 100%;
+}
+
+.switcher {
+/* width: 91%;
+margin: auto; */
+  display: flex;
+  /* background-color: #fffffff2; */
+  padding: 12px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  justify-content: center;
+  /* box-shadow: #262626b7 0px 0px 8px 1px; */
+}
+
+.from-list-switch-map {
+  text-decoration: none;
+  font-size: 15px;
+  text-align: center;
+  padding: 10px;
+  background-color: #0b7e80;
+  color: #ffffff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.from-map-switch-list {
+  text-decoration: none;
+  font-size: 15px;
+  text-align: center;
+  padding: 10px;
+  background-color: #0b7e80;
+  color: #ffffff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.switcher-items {
+  display: flex;
+  width: fit-content;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  border-radius: 20px;
+}
+
+.sign-btn {
+  width: 100%;
+  height: 40px;
+  border: none;
+  margin-top: 10px;
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.sign-btn img {
+  width: 12px;
+}
+
+.SignInWithGoogle {
+  background-color: #e05961;
+}
+
+.SignInWithFacebook {
+  background-color: #7ba4cb;
+}
+
+.modal {
+  background-color: #ffffff;
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  right: 10%;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  box-shadow: #eaeaea 0px 0px 7px 1px;
+  border-radius: 10px;
+  z-index: 1000000;
+}
+
+.close-menu-btn {
+  border: none;
+  background: none;
+  float: right;
+}
+
+.sign-in-with-title {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #25919d;
+}
+
+.sign-in-with-title strong {
+  color: #000000;
+}
+
+.sign-in-option-split {
+  padding: 10px;
+  text-align: center;
+}
+
+.highlight {
+  border: #f0a644 1.5px dashed;
+}
+
+.link-group-left {
+  width: 35px;
+}
+
+.link-group-left img {
+  padding: 10px;
+  width: 20px;
+}
+
+.link-group-right {
+  width: 100%;
+}
+
+.somthing {
+  position: absolute;
+  z-index: 3000;
+}
+
+.newuser-form {
+  background-color: #ffffff;
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  right: 10%;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  height: 50vh;
+  box-shadow: #eaeaea 0px 0px 7px 1px;
+  border-radius: 10px;
+  z-index: 99999;
+}
+
+.newuser-form-container {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-weight: 200;
+}
+
+.newuser-form-container span {
+  color: #e86666;
+}
+
+
+.newuser-form-border {
+  font-weight: 13px;
+  font-weight:lighter;
+  padding: 4px;
+  border-radius: 8px;
+  border: #da8337 1.5px dashed;
+
+}
+
+.new-user-form {
+  font-weight: 300;
+  text-transform: capitalize;
+  margin-top: 30px;
+}
+
